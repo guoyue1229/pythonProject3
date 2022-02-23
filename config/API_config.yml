@@ -1,0 +1,170 @@
+#cancelorder:
+#  data:
+#    AppID: '1004'
+#    Nonce: ay597dspfs049rxtt8fd
+#    PostOrderId: '8175923232769170233'
+#    ReqTime: '1645523480429'
+#    Signature: 6F4092C4302E55194A2159D79EB1AC61
+#    SmartBoxSn: '852206607048'
+#    TerminalType: SmartAndroid
+#    TerminalVersion: 1.2.0
+#  headers:
+#    Authorization: Bearers
+#    Content-Type: application/json
+#  method: POST
+#  url: /ExpressOrder/CancelOrder
+exclusiveCodeScanSearch:
+  data:
+    AccountID: '5379'
+    AppID: '10100'
+    EndTime: '2022-1-27 23:59:59'
+    Keyword: ''
+    Nonce: qsbq7a3t6pd2hp0gfk8x
+    Page: '1'
+    ReqTime: '1642559986705'
+    Signature: C039C6CFC9DB1AA4661A5A8A57C6F52B
+    StartTime: '2022-1-27 00:00:00'
+    StationId: '88688202'
+    TenantID: '88687809'
+    TerminalType: Android
+    TerminalVersion: 1.7.5t1
+    Type: '1'
+  headers:
+    Authorization: Bearer
+    Content-Type: application/json
+  method: POST
+  url: /V2/Station/ExclusiveCodeScanSearch
+expressin:
+  data:
+    AccountID: '388300'
+    ActionInType: 1
+    AppID: '10100'
+    Data:
+    - CodeType: '0'
+      ExpressCompanyId: '3'
+      ExpressNo: JT835683918374218
+      FixedCoding: 16A
+      NaturalCoding: '0001'
+      ReceiverMobile: '18838202801'
+      ShelfNo: 16A0001
+      SpecialOrder: false
+      Time: '2022-02-16 11:24:40'
+      Type: '201'
+    Nonce: zvgjwk8jydxjoh1ybwtt
+    ReqTime: '1645427401'
+    Signature: 4CBAF728AD45D7C40F421F0F5ECF22A4
+    StationId: '88706112'
+    TenantID: '80000008'
+    TerminalType: Android
+    TerminalVersion: 1.7.3
+  expected:
+    Code: 200
+    IsSuccess: true
+  headers:
+    Authorization: Bearers
+    Content-Type: application/json
+  method: POST
+  name: "\u5165\u5E93\u63A5\u53E3"
+  url: /V2/SendOrder/ExpressIn
+getStationSendFeeNewList:
+  data:
+    AccountID: '112404'
+    AppID: '10100'
+    Nonce: 3harcjj54szuy79crr6s
+    ReqTime: '1639299810761'
+    Signature: 995183E1487F5003E0069CDD9A16B841
+    StationId: '83'
+    TenantID: '80000008'
+    TerminalType: Android
+    TerminalVersion: 1.7.3
+  expected:
+    IsSuccess: true
+  headers:
+    Authorization: Bearer
+    Content-Type: application/json
+  method: POST
+  url: /Station/GetStationSendFeeNewList
+getstationappadverlist:
+  data:
+    AccountID: '388300'
+    AdverSite: '101'
+    AdverType: '5'
+    AppID: '10100'
+    Nonce: 8trtoxalbxgvwdxqv6fu
+    ReqTime: '1645517917459'
+    Signature: 5592355B94ED7774730E2423595ED302
+    StationId: '88706112'
+    TenantID: '80000008'
+    TerminalType: Android
+    TerminalVersion: 1.7.4.1
+  expected:
+    Code: 200
+    IsSuccess: true
+  headers:
+    Authorization: Bearer
+    Content-Type: application/json
+  method: POST
+  url: /V2/APP/GetVersionV2
+getversionv2:
+  data:
+    AccountID: ''
+    AppID: '10100'
+    Nonce: jksieaylntifvpxvsuz4
+    ReqTime: '1645525512643'
+    Signature: 1F5E6994558EBE43A7541B9A4D99F6B5
+    StationId: ''
+    SystemType: '1'
+    TenantID: ''
+    TerminalType: Android
+    TerminalVersion: 1.7.4.1
+  expected:
+    Code: 200
+    IsSuccess: true
+  headers:
+    Authorization: Bearer
+    Content-Type: application/json
+  method: POST
+  url: /V2/APP/GetVersionV2
+host: https://butlerapp.diyibox.com
+login:
+  data:
+    AccountID: ''
+    AppID: '10100'
+    Nonce: c23ov9rur13gmu36effg
+    Password: Lq5GTgx6DfQ=
+    Phone: '18838202899'
+    ReqTime: '1645525512829'
+    Signature: 67A47852304DE943769C1E4B3837551E
+    StationId: ''
+    TenantID: ''
+    TerminalType: Android
+    TerminalVersion: 1.7.3
+  expected:
+    Code: 200
+    IsSuccess: true
+  headers:
+    Authorization: Bearer
+    Content-Type: application/json
+  method: POST
+  url: /User/Login
+status:
+  data:
+    AccountID: '112404'
+    AppID: '10100'
+    ExpressInType: '0'
+    ExpressNo: JT674673871436562
+    Nonce: bpodiy7ynreu5z3vhpay
+    ReqTime: '1639122430609'
+    Signature: 2B2F366A9ACBAB11E6B86DC81D07899E
+    StationId: '83'
+    TenantID: '80000008'
+    TerminalType: Android
+    TerminalVersion: 1.7.0
+  expected:
+    IsSuccess: true
+  headers:
+    Authorization: Bearers
+    Content-Type: application/json
+  method: POST
+  name: "\u83B7\u53D6\u8BA2\u5355\u72B6\u6001\u63A5\u53E3"
+  url: /SendOrder/Status
